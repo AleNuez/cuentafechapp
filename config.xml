@@ -6,10 +6,10 @@
         id        = "com.phonegap.helloworld"
         version   = "1.0.0">
 
-    <name>CorrelativApp</name>
+    <name>CuantoVa</name>
 
     <description>
-        En cuanto tiempo te recibis?
+        Hace cuanto estamos?
     </description>
 
     <author href=" " email="alejandro.emmanuel.n@gmail.com">

@@ -16,6 +16,7 @@ main {
 #header {
     background-color: #ce8532;
     background: linear-gradient(40deg, #ce8532, #d4aa7a);
+    padding: 1rem;
 }
 #article {
     background-color: rgb(177, 194, 201);
@@ -123,7 +124,7 @@ main {
         background: linear-gradient(40deg,#FF7F21,rgb(250, 162, 98)) ;
     }
     .card h2 {
-        font-size: x-large;
+        font-size: medium;
     }
 }
 

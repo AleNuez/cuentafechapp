@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
-    <script src="./js/script.js"></script>
+    <script src="./js/moment.js"></script>
+    <script src="./js/moment-precise-range.js"></script>
+    <icon src="icon.png" />
     <title>Contando los dias</title>
 </head>
 <body>
@@ -18,10 +20,46 @@
     <div class="main-without-nav">
     <article id="article">
         <div class="card-deck">
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
+        <div class="card">
+            <div class="meet-container">
+                <h2>Nos conocemos hace</h2>
+                <div class="clock-container">
+                    <div class="meet-years"><p id="meet-years">-</p><p>Años</p></div>
+                    <div class="meet-months"><p id="meet-months">-</p><p>Meses</p></div>
+                    <div class="meet-days"><p id="meet-days">-</p><p>Dias</p></div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="novios-container">
+                <h2>Somos novios hace</h2>
+                <div class="clock-container">
+                    <div class="novios-years"><p id="novios-years">-</p><p>Años</p></div>
+                    <div class="novios-months"><p id="novios-months">-</p><p>Meses</p></div>
+                    <div class="novios-days"><p id="novios-days">-</p><p>Dias</p></div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="compromiso-container">
+                <h2>Nos comprometimos hace</h2>
+                <div class="clock-container">
+                    <div class="compromiso-years"><p id="compromiso-years">-</p><p>Años</p></div>
+                    <div class="compromiso-months"><p id="compromiso-months">-</p><p>Meses</p></div>
+                    <div class="compromiso-days"><p id="compromiso-days">-</p><p>Dias</p></div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="marriage-container">
+                <h2>Nos casamos en</h2>
+                <div class="clock-container">
+                    <div class="marriage-years"><p id="marriage-years">-</p><p>Años</p></div>
+                    <div class="marriage-months"><p id="marriage-months">-</p><p>Meses</p></div>
+                    <div class="marriage-days"><p id="marriage-days">-</p><p>Dias</p></div>
+                </div>
+            </div>
+        </div>
     </div>
     </article>
     <aside id="aside">
@@ -34,5 +72,7 @@
         <small><p class="copyright">Alejandro Nuñez 2020 <br>
         Lorem ipsum dolor sit amet consectetur, Nulla,  velit ducimus placeat ratione.</p></small>
     </footer>
+
+<script src="./js/script.js"></script>
 </body>
 </html>

@@ -1,11 +1,11 @@
 * {
     text-align: center;
-    color: rgb(255, 255, 255);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body {
     height: 98vh;
     display: flex;
+    color: rgb(255, 255, 255);
     flex-direction: column;   
 }
 main {
@@ -23,9 +23,11 @@ main {
     padding-top: 1rem;
     padding-bottom: 1rem;
     flex: 3;
+    color: black;
 }
 .card {
     box-shadow: 0px 4px 4px -3px black;
+    color: black;
     flex-direction: row;
     display: flex;
     flex: 1;
@@ -33,6 +35,23 @@ main {
     height: 10rem;
     margin: 1rem;
     background-color: whitesmoke;
+    justify-content: space-evenly;
+}
+
+.card h2 {
+    font-size: smaller;
+}
+
+.meet-container .novios-container .compromiso-container .marriage-container {
+    display: flex;
+    flex-direction: column;
+}
+.clock-container {
+    flex: 1;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    
 }
 #navbar {
     background-color: #2E4A57;
@@ -103,6 +122,9 @@ main {
         background-color:#FF7F21 ;
         background: linear-gradient(40deg,#FF7F21,rgb(250, 162, 98)) ;
     }
+    .card h2 {
+        font-size: x-large;
+    }
 }
 
 @media (min-width: 800px) {
@@ -139,31 +161,7 @@ main {
     #header-menu {
         display: none;
     }
+    .card h2 {
+        font-size: x-large;
+    }
 }
-
-
-/* #clock {
-    font-weight: 40;
-    font-size: 40px;
-}
-.numero {
-    border: 2px solid #ddd;
-    border-radius: 25px;
-    background: #1a242e;
-   color: #ddd;
-    top: 50%;
-    left: 50%;
-    display: flex;
-}
-.box {
-    display: inline-block;
-    font-size: 2em;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    height: 1em;
-    line-height: 1em;
-    font-weight: bold;
-    color: #ddd;
-    padding-left: 10px;
-    margin-right: 10px;
-    vertical-align: middle;
-} */

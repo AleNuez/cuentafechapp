@@ -1,108 +1,38 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/all.css">
-    <script src="js/all.js"></script>
-    
-    <script src="./js/moment.js"></script>
-    <script src="./js/moment-precise-range.js"></script>
-    <icon src="icon.png" />
-    <title>Contador</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/script.js"></script>
+    <title>Contando los dias</title>
 </head>
 <body>
-    <header>
-            <h2 class="lead text-center">Contador de dias</h2>
+    <header id="header">
+        <h2 class="header-brand">¿Cuánto va? <button onclick="hideNav()" id="header-menu" class="header-button"></button></h2>
     </header>
-    
-    <div class="container" id="clock">
-       <div class="jumbotron text-center">  
-        <div class="row">
-            <div class="col" id="light-box1"> 
-            <div class="col"><p>Nos conocimos hace:</p></div>
-                <div class="row">
-                      <div class="col">
-                      <div class="numero"><p class="box ml-2" id="years">-</p><div class="my-2 mx-4"><p>Años</p></div></div>
-                      </div>
-                      <div class="col">
-                        <div class="numero"><p class="box ml-1" id="months">-</p><div class="my-2 mx-2"><p>Meses</p></div></div>
-                      <!-- <div class="numero"><p  class="box" id="months">-</p><p>Meses</p></div>   -->
-                    </div>
-                     <div class="col">
-                      <div class="numero"><p class="box ml-2" id="days">-</p><div class="my-2 mx-4"><p>Dias</p></div></div>
-                    </div>
-                 </div>
-              </div>
-      <div class="w-100"></div> <!-- Esto hace un salto de linea-->
-      
-            <div class="col" id="light-box2"> 
-            <div class="col"><p>Somos novios hace:</p></div>
-                <div class="row">
-                    <div class="col">
-                    <div class="numero"><p class="box ml-2" id="yearsnov">-</p><div class="my-2 mx-4"><p>Años</p></div></div>
-                    <!-- <div class="numero"><p class="box"  id="yearsnov">-</p><p >Años</p></div> -->
-                    </div>
-                    <div class="col">
-                    <div class="numero"><p class="box ml-1" id="monthsnov">-</p><div class="my-2 mx-2"><p>Meses</p></div></div>
-        
-                    </div>
-                    <div class="col">
-                    <div class="numero"><p class="box ml-2" id="daysnov">-</p><div class="my-2 mx-2"><p>Dias</p></div></div>
-                   
-                    </div>
-                 </div>
-             </div>
-
-             <div class="w-100"></div> <!-- Esto hace un salto de linea-->
-      
-             <div class="col" id="light-box3"> 
-             <div class="col"><p>Nos comprometimos hace:</p></div>
-                 <div class="row">
-                     <div class="col">
-                     <div class="numero"><p class="box ml-2" id="yearscom">-</p><div class="my-2 mx-4"><p>Años</p></div></div>
-                     <!-- <div class="numero"><p class="box"  id="yearsnov">-</p><p >Años</p></div> -->
-                     </div>
-                     <div class="col">
-                     <div class="numero"><p class="box ml-1" id="monthscom">-</p><div class="my-2 mx-2"><p>Meses</p></div></div>
-         
-                     </div>
-                     <div class="col">
-                     <div class="numero"><p class="box ml-2" id="dayscom">-</p><div class="my-2 mx-2"><p>Dias</p></div></div>
-                    
-                     </div>
-                  </div>
-              </div>
-
-              <div class="w-100"></div> <!-- Esto hace un salto de linea-->
-      
-              <div class="col" id="light-box4"> 
-              <div class="col"><p>Nos casamos en:</p></div>
-                  <div class="row">
-                      <div class="col">
-                      <div class="numero"><p class="box ml-2" id="yearmarry">-</p><div class="my-2 mx-4"><p>Años</p></div></div>
-                      <!-- <div class="numero"><p class="box"  id="yearsnov">-</p><p >Años</p></div> -->
-                      </div>
-                      <div class="col">
-                      <div class="numero"><p class="box ml-1" id="monthmarry">-</p><div class="my-2 mx-2"><p>Meses</p></div></div>
-          
-                      </div>
-                      <div class="col">
-                      <div class="numero"><p class="box ml-2" id="daymarry">-</p><div class="my-2 mx-2"><p>Dias</p></div></div>
-                     
-                      </div>
-                   </div>
-               </div>
-  
-  </div>
-
-
-
-  <script src="js/script.js"></script>
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <main>
+    <nav id="navbar">
+        <h2>Ver por acontencimiento</h2>
+    </nav>
+    <div class="main-without-nav">
+    <article id="article">
+        <div class="card-deck">
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+    </div>
+    </article>
+    <aside id="aside">
+        <h2>Fotos</h2>
+    </aside>
+    </div>    
+    </main>
+    <footer id="footer">
+        <h2><small></small></h2>
+        <small><p class="copyright">Alejandro Nuñez 2020 <br>
+        Lorem ipsum dolor sit amet consectetur, Nulla,  velit ducimus placeat ratione.</p></small>
+    </footer>
 </body>
 </html>

@@ -1,12 +1,148 @@
-header {
-    background: #2c3e50;
-    color: #ffffff;
+* {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body {
-    background: #f5f5f5;
-    
+    height: 98vh;
+    display: flex;
+    flex-direction: column;   
 }
-#clock {
+main {
+    flex-direction: column;
+    display: flex;
+    flex: 1;
+}
+#header {
+    background-color: #ce8532;
+    background: linear-gradient(40deg, #ce8532, #d4aa7a);
+}
+#article {
+    background-color: rgb(177, 194, 201);
+    background: linear-gradient(40deg, rgb(177, 194,201), rgb(226, 226, 226));
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    flex: 3;
+}
+.card {
+    box-shadow: 0px 4px 4px -3px black;
+    flex-direction: row;
+    display: flex;
+    flex: 1;
+    border-radius: 10px;
+    height: 10rem;
+    margin: 1rem;
+    background-color: whitesmoke;
+}
+#navbar {
+    background-color: #2E4A57;
+}
+#aside {
+    background-color: #AFDCF0;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    flex: 1 5rem;
+}
+#footer {
+    background-color:rgb(134, 123, 111);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.header-brand {
+    text-align: left;
+    margin-left: 5px;   
+}
+.header-button {
+    float: right;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 10px;
+    margin: -8px 8px;
+    box-shadow: 0px 4px 4px -3px black;  
+}
+.copyright {
+    text-align: center;
+    font-size: smaller;
+}
+
+@media (min-width: 400px )  {
+  
+    body {
+        flex-direction: column;
+    }
+    .main-without-nav {
+        display: flex;
+        flex: 1;
+    }
+    #navbar {
+        background-color: #0CA2B3;
+        flex: 0;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        flex: 1 5rem;
+    }
+    #article {
+        background-color:#3BEBFF ;
+        background: linear-gradient(40deg,#3BEBFF, rgb(148, 241, 252));
+        flex-direction: column;
+        flex: 2;
+        display: flex;
+    }
+    #aside {
+        background-color:#21EAFF ;
+        background: linear-gradient(40deg,#21EAFF, rgb(148, 241, 252));
+        flex-direction: column;
+        display: flex;
+        flex: 1;
+    }
+    #header {
+        background-color:#B34C00 ;
+        padding: 1rem;
+    }
+    #footer {
+        background-color:#FF7F21 ;
+        background: linear-gradient(40deg,#FF7F21,rgb(250, 162, 98)) ;
+    }
+}
+
+@media (min-width: 800px) {
+    body {
+        flex-direction: column;
+    }
+    main {
+        flex-direction: row;
+        flex: 1;
+    }
+    .main-without-nav{
+        flex: 3;
+    }
+    #navbar {
+        background: linear-gradient(40deg, #2e2e2e, #444444);
+        flex: 1;
+        
+    }
+    #article {
+        background: linear-gradient(40deg, #7b2cc5, #8d68be);
+    
+    }
+    #aside {
+        background: linear-gradient(40deg, #7b2cc5, #8d68be);
+        
+    }
+    #header {
+        background: linear-gradient(40deg, #390966, #4c277e);
+        
+    }
+    #footer {
+        background: linear-gradient(40deg, #000000, #363636);
+    }
+    #header-menu {
+        display: none;
+    }
+}
+
+
+/* #clock {
     font-weight: 40;
     font-size: 40px;
 }
@@ -30,4 +166,4 @@ body {
     padding-left: 10px;
     margin-right: 10px;
     vertical-align: middle;
-}
+} */

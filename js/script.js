@@ -53,6 +53,6 @@ function showMeet() {
     var check = document.querySelector("#meet-input");
     var meetCard = document.querySelector("#meet-card");
     if (check.checked == 1) {
-        meetCard.style.display = "block";
+        meetCard.style.display = "flex";
     } else meetCard.style.display = "none";
 }

@@ -43,7 +43,7 @@ main {
     font-size: smaller;
 }
 
-.meet-container .novios-container .compromiso-container .marriage-container {
+.center-container {
     display: flex;
     flex-direction: column;
 }
@@ -51,7 +51,7 @@ main {
     flex: 1;
     display: flex;
     align-content: center;
-    justify-content: space-between;
+    justify-content: space-around;
     
 }
 #navbar {

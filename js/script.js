@@ -42,13 +42,15 @@ yearmarryspace.innerHTML = diffmarry.years;
 monthmarryspace.innerHTML = diffmarry.months;
 daymarryspace.innerHTML = diffmarry.days;
 
-function hideNav() {
-    var nav = document.querySelector("#navbar");
-    if (nav.style.display == "none") {
-        nav.style.display = "block";
-    } else nav.style.display = "none";
+hideNav = () => {
+    let nav = document.querySelector("#navbar");
+    nav.style.display = nav.style.display == "block" ? "none" : "block";
+
 }
 
+beautyCross = (x) => {
+    x.classList.toggle("close");
+}
 showMeet = (id, card) => {
     let check = document.querySelector(id);
     let meetCard = document.querySelector(card);

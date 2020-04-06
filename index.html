@@ -17,16 +17,16 @@
     <nav id="navbar">
         <h2>Ver por acontencimiento</h2>
         <form id="nav-list">
-            <div class="nav-content"><input id="check-nav" type="checkbox" value="meet"></input><p>Nos conocimos</p></div><hr>
-            <div class="nav-content"><input id="check-nav" type="checkbox" value="novios"></input><p>Nos pusimos de novios</p></div><hr>
-            <div class="nav-content"><input id="check-nav" type="checkbox" value="compromiso"></input><p>Nos comprometimos</p></div><hr>
-            <div class="nav-content"><input id="check-nav" type="checkbox" value="marriage"></input><p>Nos casamos</p></div><hr><br>
+            <div class="nav-content"><input onclick="showMeet()" id="meet-input" class="check-nav" type="checkbox" value="meet"></input><p>Nos conocimos</p></div><hr>
+            <div class="nav-content"><input id="novios-input" class="check-nav" type="checkbox" value="novios"></input><p>Nos pusimos de novios</p></div><hr>
+            <div class="nav-content"><input class="check-nav" type="checkbox" value="compromiso"></input><p>Nos comprometimos</p></div><hr>
+            <div class="nav-content"><input class="check-nav" type="checkbox" value="marriage"></input><p>Nos casamos</p></div><hr><br>
         </form>
     </nav>
     <div class="main-without-nav">
     <article id="article">
         <div class="card-deck">
-        <div class="card">
+        <div id="meet-card" class="card">
             <div class="meet-container">
                 <h2>Nos conocemos hace</h2>
                 <div class="clock-container">

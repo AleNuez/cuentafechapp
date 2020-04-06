@@ -49,4 +49,10 @@ function hideNav() {
     } else nav.style.display = "none";
 }
 
-
+function showMeet() {
+    var check = document.querySelector("#meet-input");
+    var meetCard = document.querySelector("#meet-card");
+    if (check.checked == 1) {
+        meetCard.style.display = "block";
+    } else meetCard.style.display = "none";
+}

@@ -89,7 +89,7 @@ main {
     display: flex;
     flex-direction: column;
 }
-#check-nav {
+.check-nav {
     height: 1.7rem;
     width: 1.7rem;
     margin: 5px;

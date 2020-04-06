@@ -179,9 +179,7 @@ main {
     #footer {
         background: linear-gradient(40deg, #000000, #363636);
     }
-    #header-menu {
-        display: none;
-    }
+ 
     .card h2 {
         font-size: x-large;
     }

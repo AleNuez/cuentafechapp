@@ -49,10 +49,8 @@ function hideNav() {
     } else nav.style.display = "none";
 }
 
-function showMeet() {
-    var check = document.querySelector("#meet-input");
-    var meetCard = document.querySelector("#meet-card");
-    if (check.checked == 1) {
-        meetCard.style.display = "flex";
-    } else meetCard.style.display = "none";
+showMeet = (id, card) => {
+    let check = document.querySelector(id);
+    let meetCard = document.querySelector(card);
+    meetCard.style.display = check.checked == 1 ? "flex" : "none";
 }

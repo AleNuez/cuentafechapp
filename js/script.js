@@ -45,7 +45,7 @@ daymarryspace.innerHTML = diffmarry.days;
 hideNav = () => {
     let nav = document.querySelector("#navbar");
     nav.style.display = nav.style.display == "block" ? "none" : "block";
-
+    
 }
 
 beautyCross = (x) => {

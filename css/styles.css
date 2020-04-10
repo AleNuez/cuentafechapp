@@ -86,6 +86,7 @@ main {
     padding-top: 4rem;
     padding-bottom: 4rem;
     flex: 1 5rem;
+    display: none;
 }
 #footer {
     background-color:rgb(134, 123, 111);
@@ -96,7 +97,7 @@ main {
     text-align: left;
     margin-left: 5px;   
 }
-.header-button {
+#header-button {
     float: right;
     width: 3rem;
     height: 3rem;
@@ -104,6 +105,7 @@ main {
     margin: -8px 8px;
     box-shadow: 0px 4px 4px -3px black;  
 }
+
 .copyright {
     text-align: center;
     font-size: smaller;
@@ -147,6 +149,7 @@ main {
         padding-top: 0rem;
         padding-bottom: 1rem;
         flex: 1 5rem;
+        display: none;
     }
     #nav-list hr {
         width: 60%;
@@ -169,7 +172,7 @@ main {
         background-color:#21EAFF ;
         background: linear-gradient(40deg,#21EAFF, rgb(148, 241, 252));
         flex-direction: column;
-        display: flex;
+        display: none;
         flex: 1;
     }
     #header {
@@ -207,6 +210,7 @@ main {
     }
     #aside {
         background: linear-gradient(40deg, #7b2cc5, #8d68be);
+        display: none;
         
     }
     #header {

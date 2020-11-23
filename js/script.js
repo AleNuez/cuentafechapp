@@ -1,17 +1,17 @@
 var conocimos = moment('2017-10-17'); //genero las fechas
 var novios = moment('2018-04-02');
-var comprometidos = moment('2020-02-24');
-var casorio = moment('2020-08-07');
+// var comprometidos = moment('2020-02-24');
+var casorio = moment('2020-10-30');
 var now = moment();
 
 var timeconocimos = moment.duration(now.diff(conocimos)); //resto las fechas
 var timenovios = moment.duration(now.diff(novios));
-var timecomprometidos = moment.duration(now.diff(comprometidos));
+// var timecomprometidos = moment.duration(now.diff(comprometidos));
 var timetomarry = moment.duration(casorio.diff(now));
 
 var diffnovios = moment.preciseDiff(novios, now, true);
 var diffconocimos = moment.preciseDiff(conocimos, now, true); 
-var diffcomprometidos = moment.preciseDiff(comprometidos, now, true);
+// var diffcomprometidos = moment.preciseDiff(comprometidos, now, true);
 var diffmarry = moment.preciseDiff (now, casorio ,true);
 
 var yearspace = document.getElementById("meet-years"); //manipulo dom y muestro
@@ -28,12 +28,12 @@ yearnovspace.innerHTML = diffnovios.years;
 monthnovspace.innerHTML = diffnovios.months;
 daynovspace.innerHTML = diffnovios.days;
 
-var yearcompspace = document.getElementById("compromiso-years");
-var monthcompspace = document.getElementById("compromiso-months");
-var daycompspace = document.getElementById("compromiso-days");
-yearcompspace.innerHTML = diffcomprometidos.years;
-monthcompspace.innerHTML = diffcomprometidos.months;
-daycompspace.innerHTML = diffcomprometidos.days;
+// var yearcompspace = document.getElementById("compromiso-years");
+// var monthcompspace = document.getElementById("compromiso-months");
+// var daycompspace = document.getElementById("compromiso-days");
+// yearcompspace.innerHTML = diffcomprometidos.years;
+// monthcompspace.innerHTML = diffcomprometidos.months;
+// daycompspace.innerHTML = diffcomprometidos.days;
 
 var yearmarryspace = document.getElementById("marriage-years");
 var monthmarryspace = document.getElementById("marriage-months");
@@ -45,7 +45,6 @@ daymarryspace.innerHTML = diffmarry.days;
 hideNav = () => {
     let nav = document.querySelector("#navbar");
     nav.style.display = nav.style.display == "block" ? "none" : "block";
-    
 }
 
 beautyCross = (x) => {
